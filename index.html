@@ -1,12 +1,12 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
-    <meta name="robots" content="noindex">
+    
       <meta http-equiv="content-type" content="text/html; charset=utf-8">
       <meta http-equiv="content-type" content="text/html; charset=utf-8">
       <title>| Web na m�ru </title> 
       <meta name="description" content="?"/> 
-      <meta name="robots" content="index, follow">
+      <meta name="robots" content="noindex">
       <meta charset="UTF-8">
       <meta name="keywords" content="">
       <link rel="shortcut icon" href=".ico" type="image/x-icon">  
@@ -14,19 +14,33 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
       <style>
+        *:focus,{
+          outline: none;
+        }
       ::-moz-selection { /* Code for Firefox */
        
         background: #ffc600;
+        color: #ffff;
       }
 
-      ::selection {background: #ffc600;}
+      ::selection {background: #ffc600;color: #ffff;}
+      #footer-info::-moz-selection,#footer-info a::selection,#footer-info b::selection { /* Code for Firefox */
+       
+       background: #ffffff !important;
+       color: #111111 !important;
+     }
+
+     #footer-info::selection,#footer-info a::selection,#footer-info b::selection {background: #ffffff !important;color: #111111 !important;}
+     #footer-info p::selection,#footer-info h2::selection,#footer-info a::selection,#footer-info b::selection {background: #ffffff !important;color: #111111 !important;}
       nav {
         background:#ff7d00;
         text-align:center;
         
+        
       }
       :root{
       --menumar:3vh;
+      --footer-col:#ffc600;
       }
       #m-n01{
       color:white;
@@ -327,7 +341,7 @@
       margin:10vw;
     }.maxwidth-75{
       max-width: 85vw;margin:7.5vw;
-    }#gif1{
+    }#gif1,#gif2{
       width: 100%;
     }
   </style>
@@ -351,14 +365,15 @@
                 display: inline-block;
                 float: right;
                 margin-right:calc( var(--menumar) + 3vh);
-
+                margin-top: 0.5vh;
                 
               }#menu-div-pc a{
                 color:white;
                 font-family:'Muli',sans-serif;
-                font-size: 20px;
+                font-size: 2.5vh;
                 padding-right: 2vw;
                 text-decoration: none;
+                
               }.uv3 {
                 text-decoration: none; 
                 position: relative; 
@@ -448,9 +463,9 @@
                 margin: 1vw;
                 padding: 3vw;
                 text-align: center;
-                height:18vw;
+                height:19vw;
                 
-              }.di-di1 p{font-size: 1.2vw !important;}
+              }.di-di1 p{font-size: 1.25vw !important;}
               #di02 br{
                 display: none;
               }
@@ -497,8 +512,100 @@
               }.con-button{
                 min-width: 20% !important;
               }
+              #gif-div-2{
+                width:100%;
+                display: flex;
+                height: auto;
+              }#gif-div-2-1{
+                flex:1;
+                background: rgb(36,151,136);
+                float: left;
+              }#gif2{
+                flex:1;
+                height:12vw;
+                
+                float: left;
+              }#gif-div-2-2{
+                flex:1;
+                float: left;
+                background: rgb(231,35,100);
+              }
 
           }
+          </style>
+          <style>
+            #con-form{
+
+            }#in-name,#in-email,#in-text{
+              
+              border:none;
+              border-radius: .4em;
+              padding:5px;
+              min-width:80vw;
+              height:2rem;
+              background: #f3f5fe;
+              /*box-shadow: 6px 6px 20px rgba(122,122,122,0.2);*/
+              text-align: center;
+              font-size:18px;
+              transition:.9s;
+            }#con-form label{
+              font-family: Mali, sans-serif;
+              color:#6e6e6e;
+              line-height:3rem;
+              font-size: 18px;
+            }
+            #in-name:focus,#in-email:focus,#in-text:focus{
+                outline:none;
+                background-color:#e6e6e6;
+                transition:.9s;}
+
+            #footer-info{
+              text-align: left;
+              padding:1rem;
+            }#footer-info p{
+              margin-left:1rem;
+              margin-right:1rem;
+            }
+            #footer-info #info-div{
+              margin-left:2rem;
+              margin-right:2rem;
+            } 
+            #footer-info #info-div a{color:white;}
+            #footer-info #info-div a:hover{color:whitesmoke;} 
+            #footer-info #info-div #p0032{ 
+              font-size: 16px !important;
+              margin:0 !important;
+            }#footer-info #info-div p{ margin:5px !important;}
+            #copyright{
+              font-size:80% !important;
+            }
+
+
+             @media screen and (min-width: 900px){
+              #con-form form{
+                
+              }#in-name,#in-email,#in-text{
+              min-width:20vw;}
+              #pc-p{
+                font-size: 25px !important;
+              }
+              #in-name:focus,#in-email:focus,#in-text:focus{
+                outline:none;
+                transform: scale(1.1);
+                transition:.9s;background-color:#f3f5fe;}
+              #footer-info{
+                text-align: left;
+                padding:4rem;
+                padding-bottom: 1rem;
+              }#footer-info #info-div #p0032{ 
+                font-size: 18px !important;
+              }#copyright{
+              font-size:90% !important;
+              
+              }
+
+            }
+            
           </style>     
   </head>
   <body style="margin:0;width:100%;">
@@ -663,9 +770,67 @@
           <b>Napište nám!</b>
         </button>
         <br>
-        <br> 
-        
-        
+        <br>
+        <br>
+        <br>
+        <h3 class="tit"> <span class="uv2">Co Vám můžeme nabídnout?</span></h3> 
+        <p class="mxwidth-m10" style="text-align:left;">Jsme menší společnost s několikaletými zkušenostmi s vývojem kvalitních a výdělečných webů, posuďte sami jak se Vám líbí tato stránka. Neděláme to pro peníze ale protože nás to <span class="uv2">baví</span>.</p>
+        <div id="gif-div-2"><div id="gif-div-2-1"></div><img src="gf2.gif" id="gif2"><div id="gif-div-2-2"></div></div>
+        <p class="mxwidth-m10" style="text-align: left;"> Vytváříme protože je nádherné sledovat když je práce dokončená a opravdu plní svou funkci. Naučit se programovat není zas tak těžké, ale ne každého programátora práce opravdu baví. To je největší rozdíl mezi společnostmi nebo lidmi kteří Vám něco naprogramují. Motivace proč to dělají.</p>
+        <p class="mxwidth-m10" style="text-align: left;"> Ať už si vyberete nás nebo kohokoli jiného, přejeme Vám aby se web povedl a pomohl Vám!</p>
+        <h3 class="tit" id="pc-p"> <span class="uv2">Nějaké otázky? Nebo jste si už vybrali?</span></h3> 
+        <div style="" id="con-form">
+          <p class="mxwidth-m10" style="text-align: center;" >No bezva! Stačí napsat, <span class="uv2">není to závazné</span></p>
+          <form style="">
+            <label for="in-name" class="uv2">Jméno:</label><br>
+            <input id="in-name" type="text"><br>
+            <label for="in-name" class="uv2">E-Mail:</label><br>
+            <input type="email" id="in-email"><br>
+            <label for="in-text" class="uv2">Zpráva:</label><br>
+            <textarea id="in-text" style="text-align: left;min-height: 7rem;font-family: Muli,sans-serif;resize: vertical;"></textarea><br>
+            <br>
+            <button class="con-button di-di-b" style="background: linear-gradient(90deg,#ffc300, #ff7d00);">
+              <b>Odeslat</b>
+            </button>
+          </form>
+        </div>
+        <br><br><br>
+        <br>
+        <br>
+        <div id="bottom-footer">
+          <svg height="10rem" width="100%" style="overflow: visible;">
+            <circle cx="8%" cy="50%" r="10vw"  fill="var(--footer-col)" />
+            <circle cx="20%" cy="50%" r="12vw"  fill="var(--footer-col)" />
+            <circle cx="30%" cy="30%" r="5vw"  fill="var(--footer-col)" />
+
+            <circle cx="35%" cy="55%" r="8vw"   fill="var(--footer-col)" />
+            <circle cx="45%" cy="50%" r="6vw"   fill="var(--footer-col)" />
+            <circle cx="55%" cy="65%" r="8vw"   fill="var(--footer-col)" />
+
+            <circle cx="65%" cy="65%" r="10vw"   fill="var(--footer-col)" />
+            <circle cx="75%" cy="40%" r="5vw"   fill="var(--footer-col)" />
+            <circle cx="85%" cy="50%" r="8vw"   fill="var(--footer-col)" />
+            <circle cx="100%" cy="45%" r="16vw"   fill="var(--footer-col)" />
+            <rect x="0" y="50%" width="100%" height="50%" fill="var(--footer-col)"/>
+          </svg>
+          <div id="footer-info"style="background-color: #ffc600;color:white;">
+            <h2 class="tit" style="margin:0;">Name - Vaše brána do online světa</h2>
+            <p> Pomáháme zviditelnit</p>
+            <br>
+            <div id="info-div">
+              <p id="p0032">Tvorba webových stránek pro Vás a Váš byznys</p>
+              <br><br>
+              <h2 class="tit">Kontakt</h2>
+              <p><b>Adresa:</b> xxx djksnnsk</p>
+              <p><b>Web:</b> <a href="#">domain.com</a></p>
+              <p><b>E-mail:</b> <a href="mailto:podpora@webforest.cz">xxx djksnnsk</a></p>
+              <p><b>Telefon:</b> <a href="tel:+420 604 409 636">111 111 111</a></p><br>
+
+            </div>  
+            <div style="border-top:1px solid #888;width:100%;text-align: center;color:white" ><p id="copyright">Copyright © 2020 - 2021. Všechna práva vyhrazena.</p></div>
+          </div>
+            
+        </div>
     </div>     
   </body>
 </html>
