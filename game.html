@@ -1,0 +1,155 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+    
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>JW</title> 
+      <meta name="description" content="?"/> 
+      <meta name="robots" content="index, follow">
+      <meta charset="UTF-8">
+      <meta name="keywords" content="">
+      <link rel="shortcut icon" href=".ico" type="image/x-icon">  
+      <script src="https://kit.fontawesome.com/d60d428278.js" crossorigin="anonymous"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+      <style>
+          body{
+              margin: 0;
+              font-family: 'Poppins';
+              background-color: #ff9000;
+          }
+          #menu{
+              text-align: center;
+              background-color: #ff6000;
+              color:white;
+          }#game-div{
+              color: #111111;
+              background-color: #ff9000;
+              padding:2vw;
+              padding-top: 3rem;
+          }#work-div{
+              color: #1d1d1d;
+              border: none;
+              border-radius: .3em;
+              background-color: #fdfdfd;
+              padding: 2vw;
+             
+          }.answer-div{
+            width:88vw !important; /*92 je cela sirka, ale - padding*/
+            border-radius: .4em;
+            border: none;
+            background-color: aliceblue;
+            padding: 2vw;
+            position: relative;
+            text-align: center;
+            margin-top:1.2vw;
+          }
+          .alphabet{
+              position: absolute;
+              left: 2vw;
+          }#players{
+              color:;
+              text-align: center;
+          }#space{
+              height: 6vh;
+              width:100%;
+          }#profile-card{
+              width:94vw;
+              padding:1vw;
+              background-color: aliceblue;
+              text-align: left;
+              border: 0;
+              border-radius: .4em;
+          }#ranked{
+              background-color: #b9b8b8;
+              border-radius: .4em;
+              border: 5px solid #888;
+          }#profile-card-others{
+              margin-bottom:1vw;
+              padding:1vw;
+              background-color: aliceblue;
+              text-align: left;
+              border: 0;
+              border-radius: .4em;
+              display: flex;
+            }.o-rank{margin:0;padding: 0;font-size: 150%;font-weight: bold;width:33%;}.o-name{margin:0;width:34%;text-align: center;font-size: 150%;font-weight: bold;}.o-num{color:#555;width:33%;text-align: right;font-size: 140%;font-weight: bold;}
+      </style>    
+    </head>
+    <body>
+       <script> 
+       var text =`
+       s""ssd
+       `
+       function loadDoc() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("game-div").innerHTML =
+                this.responseText;
+                }
+            };
+            xhttp.open("GET", "http://jsboteditor.000webhostapp.com/game.php", true);
+            xhttp.send();
+            }
+            loadDoc();
+       </script>
+        
+        <div id="menu">
+            <h1 style="margin: 0;">Game</h1>
+        </div>
+        <div id="game-div">
+            <div id="work-div">
+                <h3>Kolik dnu <!--miluju Emču-->?</h3>
+                <div class="answer-div"><span class="alphabet">a</span>220</div>
+                <div class="answer-div"><span class="alphabet">b</span>120</div>
+                <div class="answer-div"><span class="alphabet">c</span>100</div>
+                <div class="answer-div"><span class="alphabet">d</span>60</div>
+
+            </div>
+            <div id="space"></div>
+            <div id="players">
+                <div id="profile-card">
+                    <h3 style="margin:0;">You</h3>
+                    <h4 style="margin:0;padding-left: 3vw;">Body: <span style="color:#555;">1200</span></h4>
+                    <h4 style="margin:0;padding-left: 3vw;">Pořadí: <span style="color: green;">#3</span></h4>
+                </div> 
+                <br>
+                <div id="ranked">
+                   <div id="profile-card-others">
+                        <div class="o-rank" style="color: #ffdb10;">#1</div>
+                        <div class="o-name" style="color: #e66acc;">Emča</div>
+                        <div class="o-num" style="color: ;">120</div> 
+                    </div> 
+                    <div id="profile-card-others">
+                        <div class="o-rank" style="color: #ff9000;">#2</div>
+                        <div class="o-name" style="color: #61d0df;">Vítek</div>
+                        <div class="o-num" >100</div> 
+                    </div> 
+                    <div id="profile-card-others">
+                        <div class="o-rank" style="color: #777;">#3</div>
+                        <div class="o-name" style="color: #35b935;">Tom</div>
+                        <div class="o-num">97</div> 
+                    </div> 
+                    <div id="profile-card-others">
+                        <div class="o-rank" style="color: #202020;">#4</div>
+                        <div class="o-name" style="color: #999999;">Martin</div>
+                        <div class="o-num">97</div> 
+                    </div>  
+                    <div id="profile-card-others">
+                        <div class="o-rank" style="color: #202020;">#5</div>
+                        <div class="o-name" style="color: #ff6000;">Klára</div>
+                        <div class="o-num">90</div> 
+                    </div> 
+                    <div id="profile-card-others">
+                        <div class="o-rank" style="color: #202020;">#6</div>
+                        <div class="o-name" style="color: #ffe600;" >Beno</div>
+                        <div class="o-num">85</div> 
+                    </div>  
+                </div> 
+                  
+            </div>        
+        </div>    
+    </body>    
+</html>        
