@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0, utf-8">
+        <link rel="stylesheet" href="theme.css" />
+        <!--<link rel="stylesheet" href="../theme.css" />-->
+        <title>Stary Vrch</title>
+    </head>
+    <body>
+    <!-- Shoptet page content -->
+    <div class="main">
+        <div class="info">
+            <h3 class="ital bold">Karel</h3>
+            <div>
+                <img href=""/>
+                <p>Telefon</p>
+                <a>444 555 677</a>
+            </div>
+            <a class="porto-btn">Zobrazit ostatní členy</a>
+        </div>
+        <div class="profile_img"><img src="profile_img.png"/></div>
+    </div>
+
+    <style>
+        /* Styly specifické pro tuto stránku zde. */
+        body{
+            background-color: #FFFFFF;
+            font-family: 'Abroise-demi', arial, sans-serif;
+        }
+        .main{
+            display: flex;
+            padding: 15vh 8vw 15vh 8vw;
+        }
+        .info{
+            flex: 1;
+        }
+        .profile_img{
+            flex: 1;
+            width: auto;
+        }.profile_img img{
+
+                     height: auto;
+                     max-width: 100%;
+                     vertical-align: top;
+
+
+                 }
+         .porto-btn{
+             margin-top: 20px;
+             font-size: 14px;
+             font-weight: 500;
+             font-family: 'Basic Sans', arial, sans-serif;
+             position: relative;
+             border: 1px solid #161313;
+             padding: 15px 30px;
+             border-radius: 30px;
+             text-align: center;
+             background: transparent;
+             color: #161313 ;
+             text-decoration: none;
+             cursor: pointer;
+             display: inline-block;
+             transition: all 0.3s;
+         }
+         .porto-btn:hover{
+             background-color: pink;
+             box-shadow: unset;
+             border-color: #EAE0D4;
+             color:#161313;
+         }
+    </style>
+    </body>
+</html>
